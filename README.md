@@ -43,3 +43,20 @@ Image paths used:
 ```
 
 Simply rerun the inference given the first command for every image path to obtain the image captionings used in the project for the GIT base model. 
+
+# BLIP
+
+## Conda enviroment
+For running the blip model, we had to construct our own conda enviroment to fix some dependency issues, this yml file is provided by us.
+```shell
+conda env create -f blip.yml
+```
+
+## Selecting images
+place any images in the imagenet folder (right now the images there are our sample images, but any can be placed here).
+
+## Running BLIP
+```shell
+conda activate blip
+python blip.py
+```
