@@ -49,7 +49,7 @@ Simply rerun the inference given the first command for every image path to obtai
 ## Conda enviroment
 For running the blip model, we had to construct our own conda enviroment to fix some dependency issues, this yml file is provided by us.
 ```shell
-conda env create -f blip.yml
+conda env create -f blip.yaml
 ```
 
 ## Selecting images
@@ -60,3 +60,20 @@ place any images in the imagenet folder (right now the images there are our samp
 conda activate blip
 python blip.py
 ```
+
+# LADIC
+This was really hacky to get up and running so it is not very pretty
+
+## Enviroment
+For running the ladic model, we had to construct our own conda enviroment to fix many dependency issues, this yml file is provided by us.
+```shell
+conda env create -f ladic.yaml
+```
+
+## Selecting images
+Replace the image in images/1.jpg and name it **exactly** 1.jpg, same name and same file ending. Run 
+```shell
+conda activate blip
+python coco_eval.py
+```
+The program will crash but at least it will ouput the inferred caption before doing so.
