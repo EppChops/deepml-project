@@ -16,6 +16,7 @@ Inference on a single image is done through running the following command:
 ```
 
 To run our chosen images a sequence of commands were used where the image path is changed every time according to the path to the images.
+All of the images can be found included in the directory "blip/imagenet"
 
 Image paths used:
 
@@ -73,7 +74,7 @@ conda env create -f ladic.yaml
 ## Selecting images
 Replace the image in images/1.jpg and name it **exactly** 1.jpg, same name and same file ending. Run 
 ```shell
-conda activate blip
+conda activate ladic
 python coco_eval.py
 ```
 The program will crash but at least it will ouput the inferred caption before doing so.
